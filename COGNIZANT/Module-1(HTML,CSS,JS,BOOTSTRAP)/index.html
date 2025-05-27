@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Local Community Event Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="#">Community Portal</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navMenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="#welcome" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="#register" class="nav-link">Register</a></li>
+        <li class="nav-item"><a href="help.html" class="nav-link" target="_blank">Help</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section id="welcome" class="p-5 text-center bg-light">
+  <div class="container">
+    <h1 class="display-4 text-uppercase fw-bold">Welcome to the Local Community Event Portal</h1>
+    <p class="lead text-muted">Bringing neighbors together with meaningful events.</p>
+    <span style="color: red; font-weight: bold;">Special Offer: First 100 entries free!</span>
+  </div>
+</section>
+<section id="gallery" class="container py-5">
+  <h2 class="mb-4">Event Gallery</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="https://img.freepik.com/premium-photo/confetti-fireworks-crowd-music-festival_989072-16.jpg?semt=ais_hybrid&w=740" class="card-img-top" alt="Music Festival">
+        <div class="card-body">
+          <h5 class="card-title">Music Festival</h5>
+          <p class="card-text">Local bands rocking the night.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/2123337/pexels-photo-2123337.jpeg?cs=srgb&dl=pexels-andrew-2123337.jpg&fm=jpg" class="card-img-top" alt="Art Show">
+        <div class="card-body">
+          <h5 class="card-title">Art Show</h5>
+          <p class="card-text">Gallery of community artists.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://media.istockphoto.com/id/1006632972/photo/volunteers-with-garbage-bags.jpg?s=612x612&w=0&k=20&c=Oc8iDPJ4cMFv6RYYS-47NgVTzQoho6ZPC_N2TT9akNQ=" class="card-img-top" alt="Clean-Up Drive">
+        <div class="card-body">
+          <h5 class="card-title">Clean-Up Drive</h5>
+          <p class="card-text">Volunteers keeping our parks clean.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="register" class="container py-5">
+  <h2 class="mb-4">Register for an Event</h2>
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Full Name</label>
+      <input type="text" id="name" class="form-control" placeholder="John Doe" required autofocus>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email Address</label>
+      <input type="email" id="email" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="eventDate" class="form-label">Event Date</label>
+      <input type="date" id="eventDate" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="eventType" class="form-label">Select Event</label>
+      <select class="form-select" id="eventType" required>
+        <option selected disabled>Choose...</option>
+        <option value="music">Music</option>
+        <option value="sports">Sports</option>
+        <option value="workshop">Workshop</option>
+      </select>
+    </div>
+    <div class="form-floating mb-3">
+      <textarea class="form-control" placeholder="Leave a message" id="message" style="height: 100px"></textarea>
+      <label for="message">Message</label>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+    <output class="mt-3 d-block text-success">Registration confirmation will appear here.</output>
+  </form>
+</section>
+<section class="container py-5">
+  <h2>Quick Feedback</h2>
+  <input type="text" placeholder="Phone Number" class="form-control mb-3" id="phone">
+  <div>
+    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXZlbnQlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D" width="200" alt="event image" class="me-2">
+    <button class="btn btn-sm btn-outline-primary">Click Me</button>
+  </div>
+</section>
+<section class="container py-5">
+  <h2>Watch Our Event Promo</h2>
+  <div class="video-wrapper">
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/nI_2f6gh628" 
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+</section>
+<section class="container py-5">
+  <h2>Preferences</h2>
+  <select class="form-select mb-3">
+    <option value="music">Music</option>
+    <option value="sports">Sports</option>
+    <option value="art">Art</option>
+  </select>
+  <button class="btn btn-primary me-2">Save Preferences</button>
+  <button class="btn btn-secondary">Clear Preferences</button>
+</section>
+<section class="container py-5">
+  <h2>Find Events Near You</h2>
+  <button class="btn btn-info">Get My Location</button>
+  <p class="mt-3">Your location will be displayed here.</p>
+</section>
+<div class="modal fade" id="eventModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Event Info</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Event details go here.
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-white text-center p-3">
+  <p>&copy; 2025 Local Community Event Portal</p>
+  <div class="mt-2">
+    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+    <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 1rem;
+}
+#welcomeBanner {
+  padding: 2rem;
+  background-color: #e9f5ff;
+  border-radius: 8px;
+}
+.event-card, .card {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+.highlight, .special {
+  background-color: #ffef9f;
+  padding: 2px 5px;
+}
+body {
+  background: linear-gradient(to bottom right, #ffffff, #e6f0ff);
+}
+#welcomeBanner {
+  background: rgba(0, 123, 255, 0.1);
+}
+footer {
+  background-color: #343a40;
+  color: white;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  list-style-type: square;
+  padding-left: 1.2rem;
+}
+.navbar-nav li {
+  margin-right: 1rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid #dee2e6;
+  padding: 12px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.card {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  outline: 2px dashed #999;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.news-section {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid #ccc;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .news-section {
+    column-count: 1;
+  }
+  .event-card {
+    margin-bottom: 1rem;
+  }
+}
+.debug-outline {
+  outline: 2px dashed red;
+}
+.debug-background {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; 
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
